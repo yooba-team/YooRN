@@ -1,10 +1,12 @@
 {
-	"name": "RNtest464",
+	"name": "YooRN",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
+		"test": "jest",
+		"reverse": "adb reverse tcp:8081 tcp:8081",
+		"bundle-android": "node node_modules/react-native/local-cli/cli.js bundle --platform android --dev false --entry-file index.android.js  --bundle-output ../app/src/main/assets/index.android.bundle  --assets-dest ../app/src/main/res/"
 	},
 	"dependencies": {
 		"react": "16.0.0-alpha.12",
