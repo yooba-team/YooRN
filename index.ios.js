@@ -9,22 +9,25 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';
 
-export default class RNtest464 extends Component {
+export default class YooMain extends Component {
   render() {
     return (
       <View style={styles.container}>
+
+       <Image
+          style={{width: 96, height: 111}}
+          source={require('./img/yooba_logo96x111.png')}
+        />
+
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to Yooba!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+          https://yooba.org
         </Text>
       </View>
     );
@@ -50,4 +53,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('RNtest464', () => RNtest464);
+AppRegistry.registerComponent('YooMain', () => YooMain);
